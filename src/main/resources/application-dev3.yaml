@@ -1,0 +1,11 @@
+springdoc:
+  api-docs:
+    enabled: true
+    path: /internal/disabled-api-docs
+  swagger-ui:
+    url: /openapi.json
+    validator-url: none
+    syntaxHighlight:
+      activated: false
+    doc-expansion: none
+    default-models-expand-depth: -1

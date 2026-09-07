@@ -1,0 +1,9 @@
+springdoc:
+  # Restrict reflection scanning to your controller packages only
+  packages-to-scan:
+    - com.jdev.prodready.api.product.controller
+  paths-to-match: /api/v1/**
+  # Exclude Spring Boot Actuator or internal endpoints from doc generation
+  paths-to-exclude: /actuator/**, /internal/**
+
+

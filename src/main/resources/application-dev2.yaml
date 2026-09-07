@@ -1,0 +1,11 @@
+springdoc:
+  # Force spec generation at startup instead of first request
+  pre-loading-enabled: true
+  swagger-ui:
+    # Disable heavy client-side syntax highlighting for large JSON specs
+    syntaxHighlight:
+      activated: false
+    # Do not expand all schemas by default to reduce DOM rendering load
+    doc-expansion: none
+    display-request-duration: true
+    default-models-expand-depth: -1
