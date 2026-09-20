@@ -7,3 +7,7 @@ spring:
     show-sql: false
   datasource:
     url: jdbc:h2:file:C:\\Users\\Dell\\Downloads\\app\\Java-workspace\\product-db
+  web:
+    resources:
+      static-locations:
+        - "file:/app/static-docs/"

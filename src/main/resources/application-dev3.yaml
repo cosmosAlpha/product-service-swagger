@@ -1,7 +1,7 @@
 springdoc:
   api-docs:
     enabled: true
-    path: /internal/disabled-api-docs
+    path: /openapi.json
   swagger-ui:
     url: /openapi.json
     validator-url: none
@@ -9,3 +9,9 @@ springdoc:
       activated: false
     doc-expansion: none
     default-models-expand-depth: -1
+
+# Custom application properties bound to Docker environment variables
+app:
+  openapi:
+    server-url: ${APP_OPENAPI_SERVER_URL:http://localhost:8080}
+    env: ${APP_ENV:dev}
